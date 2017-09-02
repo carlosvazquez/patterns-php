@@ -24,15 +24,15 @@ class OilChange implements CarServiceInterface
   * @return void
   */
   public function __construct(CarServiceInterface $carService) {
-		$this->carService = $carService;
-	}
+    $this->carService = $carService;
+  }
 
  /**
   * Gets basic plus OilChange inspection cost.
   *
   * @return int
   */
-	public function getCost() {
-		return 29 + $this->carService->getCost();
-	}
+  public function getCost() {
+    return 29 + $this->carService->getCost();
+  }
 }

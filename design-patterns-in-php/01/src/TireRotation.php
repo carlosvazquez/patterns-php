@@ -1,16 +1,38 @@
 <?php
 namespace App;
+
 use App\Interfaces\CarServiceInterface;
 
+/**
+ * The TireRotation class.
+ *
+ * @author Carlos Vazquez <carlosvazquez@outlook.com>
+ */
 class TireRotation implements CarServiceInterface {
-	protected $carService;
+  /**
+  * The CarServiceInterface instance.
+  *
+  * @var \App\Interfaces\CarServiceInterface
+  */
+  protected $carService;
 
-	public function __construct(CarServiceInterface $carService) {
-		$this->carService = $carService;
-	}
+   /**
+  * The OilChange instance.
+  *
+  * @param \App\Interfaces\CarServiceInterface $carService
+  *
+  * @return void
+  */
+  public function __construct(CarServiceInterface $carService) {
+    $this->carService = $carService;
+  }
 
-	public function getCost() {
-		return 15 + $this->carService->getCost();
-	}
-
+ /**
+  * Gets Tire Rotation plus other services cost.
+  *
+  * @return int
+  */
+  public function getCost() {
+    return 15 + $this->carService->getCost();
+  }
 }

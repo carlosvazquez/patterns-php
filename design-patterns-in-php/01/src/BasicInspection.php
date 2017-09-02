@@ -15,7 +15,7 @@ class BasicInspection implements CarServiceInterface
   *
   * @return int
   */
-	public function getCost() {
-		return 25;
-	}
+  public function getCost() {
+    return 25;
+  }
 }

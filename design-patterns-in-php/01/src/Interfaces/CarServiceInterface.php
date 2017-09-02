@@ -15,5 +15,5 @@ interface CarServiceInterface
   *
   * @return int
   */
-	public function getCost();
+ public function getCost();
 }
