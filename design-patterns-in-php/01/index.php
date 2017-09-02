@@ -1,6 +1,8 @@
 <?php 
 require __DIR__ . '/vendor/autoload.php';
-use App\Demo;
+use App\BasicInspection;
+use App\OilChange;
+use App\TireRotation;
 
-$saludo = new Demo;
-$saludo->hola();
+// Decorators
+echo (new TireRotation(new OilChange(new BasicInspection)))->getCost();
