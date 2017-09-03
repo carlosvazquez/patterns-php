@@ -16,12 +16,13 @@
         "files": [
         ],
         "psr-4": {
-            "App\\": "src"
+            "App\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests"
+            "App\\": "src/",
+            "App\\Tests\\": "tests/"
         }
     },
     "extra": {
