@@ -11,29 +11,19 @@
         "phpunit/phpunit": "~6.0"
     },
     "autoload": {
-        "classmap": [
-        ],
-        "files": [
-        ],
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\": "src/",
-            "App\\Tests\\": "tests/"
+            "App\\Tests\\": "tests"
         }
     },
     "extra": {
     },
     "scripts": {
     },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true
-    },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": false
 }
