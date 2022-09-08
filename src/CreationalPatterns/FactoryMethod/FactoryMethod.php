@@ -1,6 +1,6 @@
 <?php
 
-declare( strict_types = 1 );
+declare(strict_types=1);
 
 namespace App\CreationalPatterns\FactoryMethod;
 
@@ -13,13 +13,11 @@ use App\CreationalPatterns\FactoryMethod\ConcreteCreatorTwo;
 
 class FactoryMethod 
 {
-    private ConcreteCreatorOne $concreteCreatorOne;
-    private ConcreteCreatorTwo $concreteCreatorTwo;
+    private Creator $concreteCreator;
 
-    public function __construct()
+    public function __construct(Creator $concreteCreatorClass)
     {
-        $this->concreteCreatorOne = new ConcreteCreatorOne;
-        $this->concreteCreatorTwo = new ConcreteCreatorTwo;
+        $this->concreteCreator = $concreteCreatorClass;
     }
 
     /**
@@ -28,14 +26,9 @@ class FactoryMethod
      */
     public function exec()
     {
-    echo "App: Launched with the ConcreteCreator1.\n";
-    $this->clientCode($this->concreteCreatorOne);
-
-    echo "\n\n";
-
-    echo "App: Launched with the ConcreteCreator2.\n";
-
-    $this->clientCode($this->concreteCreatorTwo);
+        echo "App: Launched with the ". get_class($this->concreteCreator) ." ConcreteCreator.\n";
+        $this->clientCode($this->concreteCreator);
+        echo "\n\n";
     }
 
     /**

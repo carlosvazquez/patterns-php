@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\CreationalPatterns\FactoryMethod;
 
 use App\CreationalPatterns\FactoryMethod\ProductInterface;
@@ -12,6 +14,6 @@ class ConcreteProductTwo implements ProductInterface
 {
     public function operation(): string
     {
-        return "{Result of the ConcreteProduct2}";
+        return "{Result of the ConcreteProductTwo}";
     }
 }
