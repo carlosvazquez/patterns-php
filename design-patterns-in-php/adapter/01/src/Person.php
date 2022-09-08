@@ -1,7 +1,7 @@
 <?php
 namespace App;
 
-use App\Bookinterface;
+use App\Contracts\Bookinterface;
 
 /**
  * The Person class
@@ -9,7 +9,8 @@ use App\Bookinterface;
  * @author Carlos Vazquez <carlosvazquez@outlook.com>
  *
  */
-class Person {
+class Person
+{
 
   /**
   * Gets the actions for book made by human.
@@ -21,5 +22,4 @@ class Person {
     $book->open();
     $book->turnPage();
   }
-
 }

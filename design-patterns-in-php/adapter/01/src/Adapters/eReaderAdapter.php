@@ -1,7 +1,8 @@
 <?php
-namespace App;
+namespace App\Adapters;
 
-use App\eReaderInterface;
+use App\Contracts\BookInterface;
+use App\Contracts\eReaderInterface;
 
 /**
  * The eReaderAdapter class.
@@ -48,5 +49,4 @@ class eReaderAdapter implements BookInterface {
   {
     return $this->eReader->pressNextButton();
   }
-
 }

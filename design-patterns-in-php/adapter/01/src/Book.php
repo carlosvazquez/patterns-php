@@ -1,15 +1,15 @@
 <?php
 namespace App;
 
-use App\BookInterface;
+use App\Contracts\BookInterface;
 
 /**
  * The Book class.
  *
  * @author Carlos Vazquez <carlosvazquez@outlook.com>
  */
-class Book implements BookInterface {
-
+class Book implements BookInterface
+{
   /**
   * Gets the book open it.
   *
