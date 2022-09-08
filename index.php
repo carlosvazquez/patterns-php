@@ -12,11 +12,11 @@ use App\CreationalPatterns\FactoryMethod\ConcreteCreatorTwo;
 // Creational Patterns
 // Factory Method
 
-$concreteClassOne = new ConcreteCreatorOne;
-$factoryMethodOne = (new FactoryMethod($concreteClassOne))->exec();
+$truck = new ConcreteCreatorOne;
+$transportOne = (new FactoryMethod($truck))->exec();
 
-$concreteClassTwo = new ConcreteCreatorTwo;
-$factoryMethodTwo = (new FactoryMethod($concreteClassTwo))->exec();
+$ship = new ConcreteCreatorTwo;
+$transportTwo = (new FactoryMethod($ship))->exec();
 
 
 // Creational Patterns

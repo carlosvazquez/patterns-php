@@ -5,12 +5,13 @@ declare(strict_types=1);
 namespace App\CreationalPatterns\FactoryMethod;
 
 use App\CreationalPatterns\FactoryMethod\Creator;
-use App\CreationalPatterns\FactoryMethod\ConcreteCreatorOne;
-use App\CreationalPatterns\FactoryMethod\ConcreteCreatorTwo;
 
-// Creational Patterns
-// Factory Method
-
+/**
+ * Creational Patterns
+ * 
+ * Factory Method
+ * @see https://refactoring.guru/design-patterns/factory-method
+ */
 class FactoryMethod 
 {
     private Creator $concreteCreator;

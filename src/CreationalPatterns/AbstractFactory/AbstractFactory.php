@@ -6,8 +6,12 @@ namespace App\CreationalPatterns\AbstractFactory;
 
 # use App\CreationalPatterns\AbstractFactory\Creator;
 
-// Creational Patterns
-// Abstract Factory
+/**
+ * Creational Patterns
+ * 
+ * Abstract Factory
+ * @see https://refactoring.guru/design-patterns/abstract-factory
+ */
 
 class AbstractFactory 
 {
